@@ -7,7 +7,7 @@ add_library(SON STATIC
   SON_perf.cpp
   SON_tcp.cpp)
 target_include_directories(SON PUBLIC
-  "$<INSTALL_INTERFACE:${CMAKE_INSTALL_PREFIX}/include/Celeritas>"
+  "$<INSTALL_INTERFACE:${CMAKE_INSTALL_PREFIX}/include>"
   "$<BUILD_INTERFACE:${CMAKE_CURRENT_LIST_DIR}/../include;>")
 find_package(Threads QUIET)
 if (TARGET Threads::Threads)
