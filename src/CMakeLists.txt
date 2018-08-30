@@ -1,4 +1,4 @@
-add_library(SON STATIC
+add_library(SON SHARED
   SON_bigbrother.cpp
   SON_celeritasClient.cpp
   SON_celeritasServer.cpp
